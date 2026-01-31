@@ -1,3 +1,15 @@
+//Uses an O(n^2) sorting algorithm
+//For small: x6 speedup
+//For medium: x25 speedup
+//For large: x50 speedup
+//For sequential
+//Insertion sort on N elements
+//Time ≈ N²
+//For parallel
+//7 × insertion sort on N/7 + merge cost
+//Time ≈ 7 × (N/7)² + N log N ≈ N² / 7 + N log N
+//Therefore Speedup ≈ N² / (N²/7 + N log N)
+
 #include <propeller2.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -168,3 +180,4 @@ int main(void) {
     while (1) _waitx(_clockfreq());
     return 0;
 }
+

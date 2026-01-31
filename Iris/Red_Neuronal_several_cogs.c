@@ -1,3 +1,9 @@
+//Same structure
+//Uses 3 cogs for operations
+//Inference time: 4 ms
+//Longer inference time due to being a small net
+//Parallelism is not taken advantage of
+
 #include <stdio.h>
 #include <propeller2.h>
 #include <math.h>
@@ -146,3 +152,4 @@ void main() {
     printf("\nAll inferences completed\n");
     for (;;) _waitx(_clockfreq());
 }
+

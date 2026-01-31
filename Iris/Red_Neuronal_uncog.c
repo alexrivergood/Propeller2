@@ -1,3 +1,10 @@
+//This version uses one cog for the calculations
+//Has an average inference time of 2.6ms
+//Structure: Input(4)
+//HiddenLayer1: 16 neurons
+//HiddenLayer2: 12 neurons
+//Output: 3 neurons
+
 #include <stdio.h>
 #include <propeller2.h>
 #include <math.h>
@@ -110,3 +117,4 @@ void main() {
     printf("\nAll inferences completed\n");
     for (;;) _waitx(_clockfreq());
 }
+

@@ -1,3 +1,7 @@
+//Uses int8 weights
+//Inference: 705 ms
+//Inference int16x16: 150 ms
+
 #include <propeller2.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -492,3 +496,4 @@ int main() {
     for (;;) _waitx(1000);
     return 0;
 }
+
